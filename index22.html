@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To The Moon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Suka Bulan</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars"/> 
+        <img src="moon.png" id="moon"/>
+        <img src="mountains_behind.png" id="mountains_behind"/>
+        <h2 id="text">Sinar Bulan</h2>
+        <a href="sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountains_front" />
+    </section> 
+    <div class="sec" id="sec">
+        <h2>Bulan Indonesia</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ab odit ex eius repellendus a fugit earum molestias optio, reprehenderit fuga perferendis, at nos
+            trum nesciunt ipsum rem, voluptatibus dolore cum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aperiam dolorum natus quasi excepturi magni. Ipsum reprehenderit officia amet cupiditate. Amet, eius? Eo
+            s, quae ullam culpa quia voluptatibus id explicabo!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam dicta ab et delectus cum ducimus ipsam eum fugit labore, ex inventore at veniam. Susci
+            pit eum aliquam corporis reprehenderit soluta.<br><br/>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At enim, adipisci voluptates, accusamus natus laborum dicta pariatur ab illo debitis minus tenetur odio temp
+            oribus asperiores obcaecati quidem aperiam deserunt doloremque!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus deserunt doloremque obcaecati fugit ullam, soluta ipsa quasi commodi assumenda, accusamus recusandae quibusdam. Libero reprehenderit ullam 
+            quibusdam deleniti sequi illo ipsum!. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, illum voluptatibus molestiae provident iusto dolores aut assumenda. Accusantium sint reiciendis ratione eius doloribus suscipit odio, maiores impedit officia eveniet nam.</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon')
+        let mountains_behinds = document.getElementById('mountains_behind')
+        let text = document.getElementById('text')
+        let btn = document.getElementById('btn')
+        let mountains_front = document.getElementById('mountains_front')
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY
+        stars,style.left= value*0.25+'px';
+    })
+    </script>
+</body>
+</html>
